@@ -51,7 +51,7 @@ Features
 
 ---
 
-📦 Installation
+Installation
 ---------------
 
 ### 1\. Clone the Repository
@@ -69,7 +69,7 @@ No additional installation is required.
 
 * * * * *
 
-🚀 Quick Start
+Quick Start
 --------------
 
 ### 1\. Run the Detector
