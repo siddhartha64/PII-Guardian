@@ -1,4 +1,4 @@
-PII Sentinel -- Flixkart
+PII-Guardian -- Flixkart
 =======================
 
 An intelligent system for detecting and anonymizing Personally Identifiable Information (PII) in e-commerce platforms
@@ -10,7 +10,7 @@ An intelligent system for detecting and anonymizing Personally Identifiable Info
  Introduction
 ---------------
 
-PII Sentinel is a privacy-first solution designed for modern e-commerce applications.\
+PII-Guardian  is a privacy-first solution designed for modern e-commerce applications.\
 It safeguards customer data by identifying and obfuscating sensitive information in real time, reducing the risk of leaks while preserving the analytical value of logs and datasets.
 
 By leveraging carefully crafted regex rules and smart redaction strategies, the system provides effective defense against unintentional data exposure.
@@ -56,8 +56,13 @@ Installation
 
 ### 1\. Clone the Repository
 
-`git clone https://github.com/siddhartha64/Project-Guardian-2.0-Real-time-PII-Defense.git
-cd Project-Guardian-2.0-Real-time-PII-Defense`
+```
+git clone https://github.com/siddhartha64/PII-Guardian.git
+cd PII-Guardian
+
+```
+
+
 
 ### 2\. Requirements
 
@@ -80,7 +85,7 @@ Quick Start
 
 CSV file should look like:
 
-`record_id,json_data
+`record_id,data_json
 1,"{""name"": ""John Doe"", ""phone"": ""1234567890"", ""email"": ""john@example.com""}"
 2,"{""first_name"": ""Jane"", ""last_name"": ""Smith"", ""aadhar"": ""123456789012""}"`
 
@@ -93,6 +98,7 @@ The script generates `redacted_output_Pagilla_Siddhartha_Reddy.csv` with the fol
 -   **redacted_data_json** → Masked JSON
 
 -   **is_pii** → Boolean flag
+  * * * * *
  Architecture
 ---------------
 
@@ -111,7 +117,7 @@ Logs/cleaned data → Output file or downstream system
 --------------------
 
 ```
-Assignment/
+PII-Guardian/
 ├── detector_Pagilla_Siddhartha_Reddy.py          # Main detection script
 ├── iscp_pii_dataset.csv                          # Sample dataset
 ├── redacted_output_Pagilla_Siddhartha_Reddy.csv  # Masked output
